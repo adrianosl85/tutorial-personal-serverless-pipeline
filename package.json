@@ -7,12 +7,13 @@
     "aws-sdk": "^2.340.0"
   },
   "devDependencies": {
+    "mocha": "^5.2.0",
     "serverless": "^1.32.0"
   },
   "scripts": {
     "deploy": "serverless deploy",
     "deploy:sandbox": "npm run deploy -- --stage sandbox1",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",
